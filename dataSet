@@ -1,0 +1,44 @@
+# Your code below:
+#Our Toppings
+toppings = ["pepperoni",
+"pineapple",
+"cheese",
+"sausage",
+"olives",
+"anchovies",
+"mushrooms"]
+#Prices p/pizza
+price = [2, 6, 1, 3, 2, 7, 2]
+#Frequency of $2 
+num_two_dollar_slices = price.count(2)
+# length of toppings
+num_pizzas = len(toppings)
+#prints amount of pizzas
+print("We sell", num_pizzas, "different kinds of pizza!")
+#Create pizza and Prices 2-D list
+pizza_and_prices = [[2,"pepperoni"],
+[6,	"Salami"],
+[1, "Three-Cheese"],
+[3,	"Canadian Bacon"],
+[2,	"olives"],
+[7,	"anchovies"],
+[2, "mushrooms"]]
+
+print(pizza_and_prices)
+#Sort prices by asenescsion
+pizza_and_prices.sort()
+print(pizza_and_prices)
+#store cheapest pizza
+cheapest_pizza = pizza_and_prices[0]
+#store mExpensive pizza
+priciest_pizza = pizza_and_prices[-1]
+#We had our last slice of expensive pizza bought
+#lets remove anchovie slice
+pizza_and_prices.pop()
+#Want to add to Our menu by a suprise topping
+pizza_and_prices.insert(4, [2.5, "peppers"])
+print(pizza_and_prices)
+# Three customers ask for three cheapest pizzas
+three_chepapest = pizza_and_prices[:2]
+#print the message for the final customers
+print("Here are your options:",three_chepapest )
